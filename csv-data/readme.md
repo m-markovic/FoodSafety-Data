@@ -5,7 +5,7 @@ Items 1-12 contain raw temperature readings from the wireless tag sensors.
 
 The data readings correspond to the following test scenarios:
 
-"Good Day" Experiments 
+___"Good Day" Experiments___ 
 
 Items 1,4,5,6
 Remove a single burger from the fridge and cook it until it reaches 75°C  
