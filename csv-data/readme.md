@@ -13,7 +13,7 @@ Remove a single burger from the fridge and cook it until it reaches 75°C
 Items 2,3
 Remove two burgers from the fridge and cook them until they reach 75°C
 
-"Bad Day" Experiments
+___"Bad Day" Experiments___
 
 Item 7 
 Leave a single burger out of the fridge for 1 hour. Put it back in the fridge for 40 min and then cook it until it reaches 75°C
