@@ -1,15 +1,15 @@
-@prefix : <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#> .
+@prefix : <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix FoodSafetyOntology: <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#> .
-@base <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended> .
+@prefix FoodSafetyOntology: <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#> .
+@base <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended> .
 
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended> rdf:type owl:Ontology ;
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended> rdf:type owl:Ontology ;
                                                                                         
-                                                                                        owl:imports <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl> .
+                                                                                        owl:imports <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso.ttl> .
 
 
 #################################################################
@@ -34,37 +34,37 @@ rdf:value rdf:type owl:AnnotationProperty .
 #################################################################
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpConstraint
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpConstraint
 
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpConstraint> rdf:type owl:Class .
-
-
-
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep
-
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep> rdf:type owl:Class .
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpConstraint> rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Parameter
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep
 
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Parameter> rdf:type owl:Class .
-
-
-
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#PhysicalObject
-
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#PhysicalObject> rdf:type owl:Class .
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep> rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Plan
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Parameter
 
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Plan> rdf:type owl:Class .
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Parameter> rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#ChilledMeatStorageTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#PhysicalObject
+
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#PhysicalObject> rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Plan
+
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Plan> rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#ChilledMeatStorageTemp
 
 :ChilledMeatStorageTemp rdf:type owl:Class ;
                         
@@ -72,7 +72,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#CookedMeatCoreTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#CookedMeatCoreTemp
 
 :CookedMeatCoreTemp rdf:type owl:Class ;
                     
@@ -80,23 +80,23 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#Cooking
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#Cooking
 
 :Cooking rdf:type owl:Class ;
          
-         rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep> .
+         rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#Cooling
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#Cooling
 
 :Cooling rdf:type owl:Class ;
          
-         rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep> .
+         rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#CoreTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#CoreTemp
 
 :CoreTemp rdf:type owl:Class ;
           
@@ -104,7 +104,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#FSA_TemperatureThreshold
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#FSA_TemperatureThreshold
 
 :FSA_TemperatureThreshold rdf:type owl:Class ;
                           
@@ -112,23 +112,23 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#FSA_Threshold
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#FSA_Threshold
 
 :FSA_Threshold rdf:type owl:Class ;
                
-               rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Parameter> .
+               rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Parameter> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#FoodItem
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#FoodItem
 
 :FoodItem rdf:type owl:Class ;
           
-          rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#PhysicalObject> .
+          rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#PhysicalObject> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#Ingredient
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#Ingredient
 
 :Ingredient rdf:type owl:Class ;
             
@@ -136,7 +136,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#MinceBeef
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#MinceBeef
 
 :MinceBeef rdf:type owl:Class ;
            
@@ -144,15 +144,15 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#Preparation
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#Preparation
 
 :Preparation rdf:type owl:Class ;
              
-             rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep> .
+             rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#SurfaceTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#SurfaceTemp
 
 :SurfaceTemp rdf:type owl:Class ;
              
@@ -160,19 +160,19 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#Temperature
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#Temperature
 
 :Temperature rdf:type owl:Class ;
              
-             rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Parameter> .
+             rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Parameter> .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#TemperatureConstraint
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#TemperatureConstraint
 
 :TemperatureConstraint rdf:type owl:Class ;
                        
-                       rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpConstraint> .
+                       rdfs:subClassOf <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpConstraint> .
 
 
 
@@ -185,7 +185,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 #################################################################
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#CookedMeatThreshold
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#CookedMeatThreshold
 
 :CookedMeatThreshold rdf:type owl:NamedIndividual ,
                               :FSA_TemperatureThreshold ;
@@ -194,7 +194,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#HaccpTempConstraintChilledFood
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#HaccpTempConstraintChilledFood
 
 :HaccpTempConstraintChilledFood rdf:type owl:NamedIndividual ,
                                          :ChilledMeatStorageTemp ;
@@ -206,7 +206,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#HaccpTemperatureConstraintCookedFood
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#HaccpTemperatureConstraintCookedFood
 
 :HaccpTemperatureConstraintCookedFood rdf:type owl:NamedIndividual ,
                                                :CookedMeatCoreTemp ;
@@ -219,16 +219,16 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#burgerCooking
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#burgerCooking
 
 :burgerCooking rdf:type owl:NamedIndividual ,
-                        <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Plan> ;
+                        <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Plan> ;
                
                FoodSafetyOntology:hasGoal :cookedMeat .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#chilledMeat
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#chilledMeat
 
 :chilledMeat rdf:type owl:NamedIndividual ,
                       :MinceBeef ;
@@ -239,7 +239,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#chilledStorageThreshold
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#chilledStorageThreshold
 
 :chilledStorageThreshold rdf:type owl:NamedIndividual ,
                                   :FSA_TemperatureThreshold ;
@@ -248,7 +248,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#cookedMeat
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#cookedMeat
 
 :cookedMeat rdf:type owl:NamedIndividual ,
                      :MinceBeef ;
@@ -257,21 +257,21 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#cooking
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#cooking
 
 :cooking rdf:type owl:NamedIndividual ,
                   :Cooking .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#cooling
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#cooling
 
 :cooling rdf:type owl:NamedIndividual ,
                   :Cooling .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#meatCoreTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#meatCoreTemp
 
 :meatCoreTemp rdf:type owl:NamedIndividual ,
                        :CoreTemp ;
@@ -280,7 +280,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#meatOutOfStorage
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#meatOutOfStorage
 
 :meatOutOfStorage rdf:type owl:NamedIndividual ,
                            :MinceBeef ;
@@ -291,7 +291,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#meatSurfaceTemp
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#meatSurfaceTemp
 
 :meatSurfaceTemp rdf:type owl:NamedIndividual ,
                           :SurfaceTemp ;
@@ -300,7 +300,7 @@ rdf:value rdf:type owl:AnnotationProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended#preparation
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso_extended#preparation
 
 :preparation rdf:type owl:NamedIndividual ,
                       :Preparation .
