@@ -1,0 +1,193 @@
+@prefix : <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso> .
+
+<https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#entity
+
+:entity rdf:type owl:ObjectProperty ;
+        
+        rdfs:domain owl:Thing ;
+        
+        rdfs:range :WorkflowEntity .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#hasGoal
+
+:hasGoal rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :Plan ;
+         
+         rdfs:range :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#hasParameter
+
+:hasParameter rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Constraint ;
+              
+              rdfs:range :Parameter .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#inContextOf
+
+:inContextOf rdf:type owl:ObjectProperty ;
+             
+             rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#instantiatedByActivity
+
+:instantiatedByActivity rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:domain :Step ;
+                        
+                        rdfs:range :WorkflowActivity .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#instantiatedByEntity
+
+:instantiatedByEntity rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      
+                      rdfs:domain :Resource ;
+                      
+                      rdfs:range :WorkflowEntity .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#isOptionalResourceFor
+
+:isOptionalResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#isRequiredResourceFor
+
+:isRequiredResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#isResultOf
+
+:isResultOf rdf:type owl:ObjectProperty .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#restrics
+
+:restrics rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Constraint ;
+          
+          rdfs:range :Resource .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Constraint
+
+:Constraint rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpConstraint
+
+:HaccpConstraint rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :Constraint .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#HaccpStep
+
+:HaccpStep rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Parameter
+
+:Parameter rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#PhysicalObject
+
+:PhysicalObject rdf:type owl:Class ;
+                
+                rdfs:subClassOf :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Plan
+
+:Plan rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Resource
+
+:Resource rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#Step
+
+:Step rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#WorkflowActivity
+
+:WorkflowActivity rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FoodSafety-Data/master/fso#WorkflowEntity
+
+:WorkflowEntity rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
