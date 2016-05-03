@@ -4,7 +4,7 @@ This repository contains raw sensor data and ontologies used in experiments duri
 
 The latest version of the ontology can be found at http://w3id.org/abdn/foodsafety/fs-prov
 
-More information teh project can be found in the following publication:
+More information about the project can be found in the following publication:
 
 Milan Markovic, Peter Edwards, Martin Kollingbaum, Alan Rowe, "Modelling Provenance of Sensor Data for Food Safety Compliance Checking", In Proceedings of the 6th International Provenance & Annotation Workshop-IPAW 2016, June, 2016 
 
