@@ -8,7 +8,7 @@ More information about the project can be found in the following publication:
 
 Milan Markovic, Peter Edwards, Martin Kollingbaum, Alan Rowe, "Modelling Provenance of Sensor Data for Food Safety Compliance Checking", In Proceedings of the 6th International Provenance & Annotation Workshop-IPAW 2016, June, 2016 
 
-Raw sensor data where collected in a commercial kitchen environment as a result of the following simulated scenarios which reflected HACCP compliance (so-called good day scenarios) and non-compliance (bad day scenarios) were as follows:
+Raw sensor data were collected in a commercial kitchen environment as a result of the following simulated scenarios which reflected HACCP compliance (so-called good day scenarios) and non-compliance (bad day scenarios) were as follows:
 
 Good
 1-4
